@@ -9,29 +9,28 @@
 
 defined('TYPO3') or die('Access denied.');
 
-$contentTypeName = 'ucph_ce_sys_status';
-$ll = 'LLL:EXT:'.$contentTypeName.'/Resources/Private/Language/locallang_be.xlf:';
+call_user_func(function ($extKey ='ucph_ce_sys_status', $contentType ='ucph_ce_sys_status') {
+    // Add Content Element
+    if (!is_array($GLOBALS['TCA']['tt_content']['types'][$contentType] ?? false)) {
+        $GLOBALS['TCA']['tt_content']['types'][$contentType] = [];
+    }
 
-// Add Content Element
-if (!is_array($GLOBALS['TCA']['tt_content']['types'][$contentTypeName] ?? false)) {
-    $GLOBALS['TCA']['tt_content']['types'][$contentTypeName] = [];
-}
+    // Add content element to selector list
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
+        'tt_content',
+        'CType',
+        [
+            'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_be.xlf:title',
+            $contentType,
+            'ucph-ce-sys-status-icon'
+        ],
+        'special',
+        'after'
+    );
 
-// Add content element to selector list
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
-    'tt_content',
-    'CType',
-    [
-        $ll . 'title',
-        'ucph_ce_sys_status',
-        'ucph-ce-sys-status-icon'
-    ],
-    'special',
-    'after'
-);
-
-$ucph_ce_sys_status_settings = [
-    'showitem' => '
+    // Configure the default backend fields for the content element
+    $GLOBALS['TCA']['tt_content']['types'][$contentType] = [
+        'showitem' => '
     --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
         --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
         --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,
@@ -46,8 +45,6 @@ $ucph_ce_sys_status_settings = [
     --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
         rowDescription,
     --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
-    ',
-];
-
-// Configure element type
-$GLOBALS['TCA']['tt_content']['types'][$contentTypeName] = $ucph_ce_sys_status_settings;
+     ',
+     ];
+});

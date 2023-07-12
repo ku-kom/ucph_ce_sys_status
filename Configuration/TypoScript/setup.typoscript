@@ -2,7 +2,7 @@
 #### MAKE PLUGIN ACT AS cTYPE ###
 #################################
 tt_content.ucph_ce_sys_status >
-tt_content.ucph_ce_sys_status =< tt_content.list.20.kudriftinformation_pi1
+tt_content.ucph_ce_sys_status =< tt_content.list.20.ucphsysstatus_pi1
 tt_content.ucph_ce_sys_status {
    templateName = Default
     templateRootPaths {
@@ -19,19 +19,19 @@ tt_content.ucph_ce_sys_status {
 #################
 #### PLUGIN #####
 #################
-plugin.tx_kudriftinformation {
+plugin.tx_ucphsysstatus {
     view {
         templateRootPaths {
              0 = EXT:ucph_ce_sys_status/Resources/Private/Templates/
-             1 = {$plugin.tx_Kudriftinformation.view.templateRootPath}
+             1 = {$plugin.tx_ucphsysstatus.view.templateRootPath}
         }
         partialRootPaths {
             0 = EXT:ucph_ce_sys_status/Resources/Private/Partials/
-            1 = {$plugin.tx_Kudriftinformation.view.partialRootPath}
+            1 = {$plugin.tx_ucphsysstatus.view.partialRootPath}
         }
         layoutRootPaths {
             0 = EXT:ucph_ce_sys_status/Resources/Private/Layouts/
-            1 = {$plugin.tx_Kudriftinformation.view.layoutRootPath}
+            1 = {$plugin.tx_ucphsysstatus.view.layoutRootPath}
         }
     }
 }

@@ -12,10 +12,10 @@ mod.wizards.newContentElement.wizardItems {
         description = LLL:EXT:ucph_ce_sys_status/Resources/Private/Language/locallang_be.xlf:description
         tt_content_defValues {
           CType = list
-          list_type = kudriftinformation_pi1
+          list_type = ucphsysstatus_pi1
         }
       }
     }
-    show := addToList(kudriftinformation_pi1)
+    show := addToList(ucphsysstatus_pi1)
   }
 }

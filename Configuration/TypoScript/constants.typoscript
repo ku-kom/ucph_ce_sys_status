@@ -1,4 +1,4 @@
-plugin.tx_kudriftinformation {
+plugin.tx_ucphsysstatus {
     view {
         # cat=plugin.tx_Kudriftinformation/file; type=string; label=Path to template root (FE)
         templateRootPath = EXT:ucph_ce_sys_status/Resources/Private/Templates/

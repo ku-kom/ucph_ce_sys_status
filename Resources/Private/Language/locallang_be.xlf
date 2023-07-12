@@ -10,10 +10,10 @@
             <source>Webservice endpoint</source>
         </trans-unit>
         <trans-unit id="title">
-            <source>KU Service information</source>
+            <source>UCPH system status information</source>
         </trans-unit>
         <trans-unit id="description">
-            <source>KU current it service information</source>
+            <source>Current it service status information</source>
         </trans-unit>
         </body>
     </file>
