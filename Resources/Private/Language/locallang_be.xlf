@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="EXT:ucph_ce_sys_status/Resources/Private/Language/locallang_be.xlf" date="2023-03-23UTC07:12:050" product-name="ucph_ce_sys_status">
+        <header>
+            <authorName>Nanna Ellegaard</authorName>
+            <authorEmail>nel@adm.ku.dk</authorEmail>
+        </header>
+        <body>
+        <trans-unit id="webservice_uri">
+            <source>Webservice endpoint</source>
+        </trans-unit>
+        <trans-unit id="title">
+            <source>KU Service information</source>
+        </trans-unit>
+        <trans-unit id="description">
+            <source>KU current it service information</source>
+        </trans-unit>
+        </body>
+    </file>
+</xliff>

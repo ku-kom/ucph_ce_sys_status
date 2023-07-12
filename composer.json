@@ -1,0 +1,20 @@
+{
+    "name": "university-of-copenhagen/ucph-ce-sys-status",
+    "type": "typo3-cms-extension",
+    "description": "UCPH system status information",
+    "homepage": "https://www.ku.dk/",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "UniversityOfCopenhagen\\UcphCeSysStatus\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "ucph_ce_sys_status"
+        }
+    }
+}

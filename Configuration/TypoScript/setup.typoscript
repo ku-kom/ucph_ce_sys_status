@@ -1,0 +1,58 @@
+#################################
+#### MAKE PLUGIN ACT AS cTYPE ###
+#################################
+tt_content.ucph_ce_sys_status >
+tt_content.ucph_ce_sys_status =< tt_content.list.20.kudriftinformation_pi1
+tt_content.ucph_ce_sys_status {
+   templateName = Default
+    templateRootPaths {
+        81 = EXT:ucph_ce_sys_status/Resources/Private/Templates/
+    }
+    partialRootPaths {
+        81 = EXT:ucph_ce_sys_status/Resources/Private/Partials/
+    }
+    layoutRootPaths {
+        81 = EXT:ucph_ce_sys_status/Resources/Private/Layouts/
+    } 
+}
+
+#################
+#### PLUGIN #####
+#################
+plugin.tx_kudriftinformation {
+    view {
+        templateRootPaths {
+             0 = EXT:ucph_ce_sys_status/Resources/Private/Templates/
+             1 = {$plugin.tx_Kudriftinformation.view.templateRootPath}
+        }
+        partialRootPaths {
+            0 = EXT:ucph_ce_sys_status/Resources/Private/Partials/
+            1 = {$plugin.tx_Kudriftinformation.view.partialRootPath}
+        }
+        layoutRootPaths {
+            0 = EXT:ucph_ce_sys_status/Resources/Private/Layouts/
+            1 = {$plugin.tx_Kudriftinformation.view.layoutRootPath}
+        }
+    }
+}
+
+
+##########################
+#### OPTION TO ADD CSS ###
+##########################
+lib.ucph_ce_sys_status.pagecss = TEXT
+lib.ucph_ce_sys_status.pagecss {
+    if.isTrue = {$ucph_ce_sys_status.assets.extraCss}
+    value = {$ucph_ce_sys_status.assets.extraCss}
+    htmlSanitize = 1
+}
+
+##########################
+#### OPTION TO ADD JS ####
+##########################
+lib.ucph_ce_sys_status.pagejs = TEXT
+lib.ucph_ce_sys_status.pagejs {
+    if.isTrue = {$ucph_ce_sys_status.assets.extraJs}
+    value = {$ucph_ce_sys_status.assets.extraJs}
+    htmlSanitize = 1
+}
