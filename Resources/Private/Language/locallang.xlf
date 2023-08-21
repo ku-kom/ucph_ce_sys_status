@@ -33,6 +33,9 @@
         <trans-unit id="description" xml:space="preserve">
             <source>Description</source>
         </trans-unit>
+        <trans-unit id="no_events" xml:space="preserve">
+            <source>Currently no events.</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>
