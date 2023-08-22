@@ -23,7 +23,7 @@ if ($versionInformation->getMajorVersion() < 12) {
 
 // Register plugin
 ExtensionUtility::configurePlugin(
-  'ucph_sys_status',
+  'ucph_ce_sys_status',
   'Pi1',
   [\UniversityOfCopenhagen\UcphCeSysStatus\Controller\DriftinfoController::class => 'list'],
   [\UniversityOfCopenhagen\UcphCeSysStatus\Controller\DriftinfoController::class => 'list']

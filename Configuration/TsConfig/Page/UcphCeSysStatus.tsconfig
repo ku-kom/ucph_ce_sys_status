@@ -4,18 +4,17 @@
 
 mod.wizards.newContentElement.wizardItems {
   // add the content elementS to the tab "plugins"
-  plugins {
+  special {
     elements {
       ucph_ce_sys_status {
         iconIdentifier = ucph-ce-sys-status-icon
         title = LLL:EXT:ucph_ce_sys_status/Resources/Private/Language/locallang_be.xlf:title
         description = LLL:EXT:ucph_ce_sys_status/Resources/Private/Language/locallang_be.xlf:description
         tt_content_defValues {
-          CType = list
-          list_type = ucphsysstatus_pi1
+          CType = ucph_ce_sys_status
         }
       }
     }
-    show := addToList(ucphsysstatus_pi1)
+    show := addToList(ucph_ce_sys_status)
   }
 }

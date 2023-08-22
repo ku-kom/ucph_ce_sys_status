@@ -2,9 +2,12 @@
 #### MAKE PLUGIN ACT AS cTYPE ###
 #################################
 tt_content.ucph_ce_sys_status >
-tt_content.ucph_ce_sys_status =< tt_content.list.20.ucphsysstatus_pi1
+tt_content.ucph_ce_sys_status = USER
 tt_content.ucph_ce_sys_status {
-   templateName = Default
+    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+    extensionName = UcphCeSysStatus
+    pluginName = Pi1
+    templateName = Default
     templateRootPaths {
         81 = EXT:ucph_ce_sys_status/Resources/Private/Templates/
     }
