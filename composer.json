@@ -1,5 +1,5 @@
 {
-    "name": "university-of-copenhagen/ucph-ce-sys-status",
+    "name": "university-of-copenhagen/ucph-content-sys-status",
     "type": "typo3-cms-extension",
     "description": "UCPH system status information",
     "homepage": "https://www.ku.dk/",
@@ -9,12 +9,12 @@
     },
     "autoload": {
         "psr-4": {
-            "UniversityOfCopenhagen\\UcphCeSysStatus\\": "Classes/"
+            "UniversityOfCopenhagen\\UcphContentSysStatus\\": "Classes/"
         }
     },
     "extra": {
         "typo3/cms": {
-            "extension-key": "ucph_ce_sys_status"
+            "extension-key": "ucph_content_sys_status"
         }
     }
 }

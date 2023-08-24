@@ -1,18 +1,18 @@
 plugin.tx_ucphsysstatus {
     view {
         # cat=plugin.tx_Kudriftinformation/file; type=string; label=Path to template root (FE)
-        templateRootPath = EXT:ucph_ce_sys_status/Resources/Private/Templates/
+        templateRootPath = EXT:ucph_content_sys_status/Resources/Private/Templates/
         # cat=plugin.tx_Kudriftinformation/file; type=string; label=Path to template partials (FE)
-        partialRootPath = EXT:ucph_ce_sys_status/Resources/Private/Partials/
+        partialRootPath = EXT:ucph_content_sys_status/Resources/Private/Partials/
         # cat=plugin.tx_Kudriftinformation/file; type=string; label=Path to template layouts (FE)
-        layoutRootPath = EXT:ucph_ce_sys_status/Resources/Private/Layouts/
+        layoutRootPath = EXT:ucph_content_sys_status/Resources/Private/Layouts/
     }
 }
 
-ucph_ce_sys_status {
+ucph_content_sys_status {
     assets {
         # cat=plugin.tx_Kudriftinformation/Assets/; type=string; label=CSS assets: Path to stylesheet.
-        extraCss = EXT:ucph_ce_sys_status/Resources/Public/Css/Dist/ku-driftinformation.min.css
+        extraCss = EXT:ucph_content_sys_status/Resources/Public/Css/Dist/ku-driftinformation.min.css
         # cat=plugin.tx_Kudriftinformation/Assets/; type=string; label=JavaScript assets: Path to javaScript file.
         extraJs = 
     }

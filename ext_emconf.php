@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the package ucph_ce_sys_status.
+ * This file is part of the package ucph_content_sys_status.
  * For the full copyright and license information, please read the
  * LICENSE file that was distributed with this source code.
  * Sep 2022 Nanna Ellegaard, University of Copenhagen.
@@ -19,7 +19,7 @@ $EM_CONF[$_EXTKEY] = [
     ],
     'autoload' => [
         'psr-4' => [
-            'UniversityOfCopenhagen\\UcphCeSysStatus\\' => 'Classes',
+            'UniversityOfCopenhagen\\UcphContentSysStatus\\' => 'Classes',
         ],
     ],
     'state' => 'stable',

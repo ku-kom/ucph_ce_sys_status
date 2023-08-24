@@ -6,7 +6,7 @@ declare(strict_types=1);
  * Render json from driftinfo: https://cms.ku.dk/system/driftinfo_xml.mason?xml=10&json=1
  */
 
-namespace UniversityOfCopenhagen\UcphCeSysStatus\Controller;
+namespace UniversityOfCopenhagen\UcphContentSysStatus\Controller;
 
 use Psr\Http\Message\ResponseInterface;
 use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
@@ -38,7 +38,7 @@ class DriftinfoController extends ActionController
     public function listAction(): ResponseInterface
     {
         $requestFactory = GeneralUtility::makeInstance(RequestFactory::class);
-        $url = GeneralUtility::makeInstance(ExtensionConfiguration::class)->get('ucph_ce_sys_status', 'uri');
+        $url = GeneralUtility::makeInstance(ExtensionConfiguration::class)->get('ucph_content_sys_status', 'uri');
 
         // Check if the url is valid
         if (false === filter_var($url, FILTER_VALIDATE_URL)) {

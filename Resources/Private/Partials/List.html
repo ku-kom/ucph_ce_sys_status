@@ -6,36 +6,36 @@
 
 <div class="{data.CType} ku-driftinfo" id="driftinfo-{data.uid}">
     <h2>
-        <f:translate key="LLL:EXT:ucph_ce_sys_status/Resources/Private/Language/locallang.xlf:current" />
+        <f:translate key="LLL:EXT:ucph_content_sys_status/Resources/Private/Language/locallang.xlf:current" />
     </h2>
     <f:if condition="{currentinfo.item}">
         <f:then>
             <f:render partial="Current" arguments="{_all}" />
         </f:then>
         <f:else>
-            <f:translate key="LLL:EXT:ucph_ce_sys_status/Resources/Private/Language/locallang.xlf:no_events" />
+            <f:translate key="LLL:EXT:ucph_content_sys_status/Resources/Private/Language/locallang.xlf:no_events" />
         </f:else>
     </f:if>
     <h2>
-        <f:translate key="LLL:EXT:ucph_ce_sys_status/Resources/Private/Language/locallang.xlf:planned" />
+        <f:translate key="LLL:EXT:ucph_content_sys_status/Resources/Private/Language/locallang.xlf:planned" />
     </h2>
     <f:if condition="{plannedinfo.item}">
         <f:then>
             <f:render partial="Planned" arguments="{_all}" />
         </f:then>
         <f:else>
-            <f:translate key="LLL:EXT:ucph_ce_sys_status/Resources/Private/Language/locallang.xlf:no_events" />
+            <f:translate key="LLL:EXT:ucph_content_sys_status/Resources/Private/Language/locallang.xlf:no_events" />
         </f:else>
     </f:if>
     <h2>
-        <f:translate key="LLL:EXT:ucph_ce_sys_status/Resources/Private/Language/locallang.xlf:previous" />
+        <f:translate key="LLL:EXT:ucph_content_sys_status/Resources/Private/Language/locallang.xlf:previous" />
     </h2>
     <f:if condition="{previousinfo.item}">
         <f:then>
             <f:render partial="Previous" arguments="{_all}" />
         </f:then>
         <f:else>
-            <f:translate key="LLL:EXT:ucph_ce_sys_status/Resources/Private/Language/locallang.xlf:no_events" />
+            <f:translate key="LLL:EXT:ucph_content_sys_status/Resources/Private/Language/locallang.xlf:no_events" />
         </f:else>
     </f:if>
 </div>

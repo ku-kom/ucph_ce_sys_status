@@ -1,21 +1,21 @@
 #################################
 #### MAKE PLUGIN ACT AS cTYPE ###
 #################################
-tt_content.ucph_ce_sys_status >
-tt_content.ucph_ce_sys_status = USER
-tt_content.ucph_ce_sys_status {
+tt_content.ucph_content_sys_status >
+tt_content.ucph_content_sys_status = USER
+tt_content.ucph_content_sys_status {
     userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-    extensionName = UcphCeSysStatus
+    extensionName = UcphContentSysStatus
     pluginName = Pi1
     templateName = Default
     templateRootPaths {
-        81 = EXT:ucph_ce_sys_status/Resources/Private/Templates/
+        81 = EXT:ucph_content_sys_status/Resources/Private/Templates/
     }
     partialRootPaths {
-        81 = EXT:ucph_ce_sys_status/Resources/Private/Partials/
+        81 = EXT:ucph_content_sys_status/Resources/Private/Partials/
     }
     layoutRootPaths {
-        81 = EXT:ucph_ce_sys_status/Resources/Private/Layouts/
+        81 = EXT:ucph_content_sys_status/Resources/Private/Layouts/
     } 
 }
 
@@ -25,15 +25,15 @@ tt_content.ucph_ce_sys_status {
 plugin.tx_ucphsysstatus {
     view {
         templateRootPaths {
-             0 = EXT:ucph_ce_sys_status/Resources/Private/Templates/
+             0 = EXT:ucph_content_sys_status/Resources/Private/Templates/
              1 = {$plugin.tx_ucphsysstatus.view.templateRootPath}
         }
         partialRootPaths {
-            0 = EXT:ucph_ce_sys_status/Resources/Private/Partials/
+            0 = EXT:ucph_content_sys_status/Resources/Private/Partials/
             1 = {$plugin.tx_ucphsysstatus.view.partialRootPath}
         }
         layoutRootPaths {
-            0 = EXT:ucph_ce_sys_status/Resources/Private/Layouts/
+            0 = EXT:ucph_content_sys_status/Resources/Private/Layouts/
             1 = {$plugin.tx_ucphsysstatus.view.layoutRootPath}
         }
     }
@@ -43,19 +43,19 @@ plugin.tx_ucphsysstatus {
 ##########################
 #### OPTION TO ADD CSS ###
 ##########################
-lib.ucph_ce_sys_status.pagecss = TEXT
-lib.ucph_ce_sys_status.pagecss {
-    if.isTrue = {$ucph_ce_sys_status.assets.extraCss}
-    value = {$ucph_ce_sys_status.assets.extraCss}
+lib.ucph_content_sys_status.pagecss = TEXT
+lib.ucph_content_sys_status.pagecss {
+    if.isTrue = {$ucph_content_sys_status.assets.extraCss}
+    value = {$ucph_content_sys_status.assets.extraCss}
     htmlSanitize = 1
 }
 
 ##########################
 #### OPTION TO ADD JS ####
 ##########################
-lib.ucph_ce_sys_status.pagejs = TEXT
-lib.ucph_ce_sys_status.pagejs {
-    if.isTrue = {$ucph_ce_sys_status.assets.extraJs}
-    value = {$ucph_ce_sys_status.assets.extraJs}
+lib.ucph_content_sys_status.pagejs = TEXT
+lib.ucph_content_sys_status.pagejs {
+    if.isTrue = {$ucph_content_sys_status.assets.extraJs}
+    value = {$ucph_content_sys_status.assets.extraJs}
     htmlSanitize = 1
 }

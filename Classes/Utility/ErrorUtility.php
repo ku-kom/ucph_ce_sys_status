@@ -1,5 +1,5 @@
 <?php
-namespace UniversityOfCopenhagen\UcphCeSysStatus\Utility;
+namespace UniversityOfCopenhagen\UcphContentSysStatus\Utility;
 
 /*
  * This file is part of the FluidTYPO3/Vhs project under GPLv2 or later.

@@ -1,5 +1,5 @@
 <?php
-namespace UniversityOfCopenhagen\UcphCeSysStatus\Traits;
+namespace UniversityOfCopenhagen\UcphContentSysStatus\Traits;
 
 /*
  * This file is part of the FluidTYPO3/Vhs project under GPLv2 or later.
@@ -8,7 +8,7 @@ namespace UniversityOfCopenhagen\UcphCeSysStatus\Traits;
  * LICENSE.md file that was distributed with this source code.
  */
 
-use UniversityOfCopenhagen\UcphCeSysStatus\Utility\ErrorUtility;
+use UniversityOfCopenhagen\UcphContentSysStatus\Utility\ErrorUtility;
 use TYPO3\CMS\Core\Utility\ArrayUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Persistence\QueryResultInterface;

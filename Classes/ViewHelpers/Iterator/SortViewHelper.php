@@ -1,5 +1,5 @@
 <?php
-namespace UniversityOfCopenhagen\UcphCeSysStatus\ViewHelpers\Iterator;
+namespace UniversityOfCopenhagen\UcphContentSysStatus\ViewHelpers\Iterator;
 
 /*
  * This file is part of the FluidTYPO3/Vhs project under GPLv2 or later.
@@ -8,9 +8,9 @@ namespace UniversityOfCopenhagen\UcphCeSysStatus\ViewHelpers\Iterator;
  * LICENSE.md file that was distributed with this source code.
  */
 
-use UniversityOfCopenhagen\UcphCeSysStatus\Traits\ArrayConsumingViewHelperTrait;
-use UniversityOfCopenhagen\UcphCeSysStatus\Traits\TemplateVariableViewHelperTrait;
-use UniversityOfCopenhagen\UcphCeSysStatus\Utility\ErrorUtility;
+use UniversityOfCopenhagen\UcphContentSysStatus\Traits\ArrayConsumingViewHelperTrait;
+use UniversityOfCopenhagen\UcphContentSysStatus\Traits\TemplateVariableViewHelperTrait;
+use UniversityOfCopenhagen\UcphContentSysStatus\Utility\ErrorUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Persistence\Generic\LazyObjectStorage;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;

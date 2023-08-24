@@ -1,2 +1,2 @@
-# cat=Data; type=string; label=LLL:EXT:ucph_ce_sys_status/Resources/Private/Language/locallang_be.xlf:webservice_uri
+# cat=Data; type=string; label=LLL:EXT:ucph_content_sys_status/Resources/Private/Language/locallang_be.xlf:webservice_uri
 uri = https://cms.ku.dk/system/driftinfo_xml.mason?xml=20&json=1
